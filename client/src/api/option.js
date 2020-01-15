@@ -1,5 +1,5 @@
 /**
- * @file axion全局配置
+ * @file axios全局配置
  * @author cuiliang
  * @since 2020.01.14
  */
