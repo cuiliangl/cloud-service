@@ -1,4 +1,4 @@
-# sina-cloud-service-server
+# sina-cloud-service
 
 ## Project setup one
 ```
