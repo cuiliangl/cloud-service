@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+// 同级目录
+@mixin bg-image($name, $type: "png") {
+  background: {
+    image: url("./images/#{$name}_2x.#{$type}");
+    repeat: no-repeat;
+    size: 100%;
+    position: center;
+  }
+}
+// 上级目录
+@mixin level-bg-image($name, $type: "png") {
+  background: {
+    image: url("../images/#{$name}_2x.#{$type}");
+    repeat: no-repeat;
+    size: 100%;
+    position: center;
+  }
+}
+
+// 圆角
+@mixin round($radius) {
+  $radius: #{$radius}px;
+
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// 超出显示省略号
+@mixin ellipsis($clamp: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $clamp == 1 {
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $clamp;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@mixin transForm($x: 0, $y: 0) {
+  transform: translate($x, $y);
+}
+
+@mixin boxShadow {
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
