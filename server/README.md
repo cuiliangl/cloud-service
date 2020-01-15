@@ -15,3 +15,6 @@ or
 ```
 npm run start
 ```
+
+### Mock
+See [Mock.js](http://mockjs.com/)
