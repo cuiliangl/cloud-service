@@ -8,7 +8,7 @@ npm install
 npm run start
 ```
 
-## Project setup srcond
+## Project setup second
 ```
 cd client
 npm install
