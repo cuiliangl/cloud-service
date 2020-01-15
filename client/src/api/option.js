@@ -8,10 +8,10 @@ import axios from 'axios'
 import { Loading, Message } from 'element-ui'
 import { getUrlKey } from '@/utils'
 
-const baseURL = process.env.NODE_ENV === 'production'
-  ? '//inscloudmanageapi.jr.sina.cn'
-  // : '//int.inscloudmanageapi.jr.sina.cn'
-  : 'http://127.0.0.1:3000'
+const baseURL = process.env.VUE_APP_BASEURL
+
+/* mock数据 */
+// const baseURL = 'http://127.0.0.1:3000'
 
 // 创建axios实例
 const instance = axios.create({
