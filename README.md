@@ -1,6 +1,6 @@
 # sina-cloud-service
 
-## Project setup first
+## Project setup 1
 ```
 cd server
 npm install
@@ -8,7 +8,7 @@ npm install
 npm run start
 ```
 
-## Project setup second
+## Project setup 2
 ```
 cd client
 npm install
