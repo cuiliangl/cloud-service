@@ -11,7 +11,7 @@ const account = url => `/account/${url}.json`
 /* eslint-disable */
 
 export default {
-  login             :   data => post(account('login'), data, null, true),         // 登录
+  login             :   data => post(account('login'), data),                     // 登录
   logout            :   data => post(account('logout'), data)                     // 退出
 }
 

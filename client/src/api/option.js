@@ -8,10 +8,11 @@ import axios from 'axios'
 import { Loading, Message } from 'element-ui'
 import { getUrlKey } from '@/utils'
 
-const baseURL = process.env.VUE_APP_BASEURL
+// 开发测试地址
+// const baseURL = process.env.VUE_APP_BASEURL
 
 /* mock数据 */
-// const baseURL = 'http://127.0.0.1:3000'
+const baseURL = 'http://127.0.0.1:3000'
 
 // 创建axios实例
 const instance = axios.create({
@@ -78,6 +79,7 @@ instance.interceptors.response.use(response => {
   } else if (status >= 500) {
     message = '服务器出错了'
   }
+  
   Message.warning(message)
 
   return Promise.reject(message)
