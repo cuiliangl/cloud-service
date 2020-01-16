@@ -9,7 +9,7 @@ cd server
 npm install
 ```
 
-### 2. Compiles for development
+### 2. Compiles and hot-reloads for development
 ```
 npm run start
 ```
