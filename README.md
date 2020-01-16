@@ -1,17 +1,29 @@
 # sina-cloud-service
 
-## Project setup 1
+## step 1
+
+### 1. Project setup
 ```
 cd server
-npm install
 
+npm install
+```
+
+### 2. Compiles for development
+```
 npm run start
 ```
 
-## Project setup 2
+## step 2
+
+### 1. Project setup
 ```
 cd client
-npm install
 
+npm install
+```
+
+### 2. Compiles and hot-reloads for development
+```
 npm run serve
 ```
